@@ -5163,6 +5163,10 @@ h6 {
 }
 
 @media (max-width: 61.99875em) {
+  .header {
+    top: 0;
+  }
+
   .header._header-scroll {
     top: 0;
   }
