@@ -5474,8 +5474,8 @@ h6 {
   }
 
   .icon-menu {
-    display: block;
-    position: relative;
+/*     display: block;
+    position: relative; */
     width: 2.5rem;
     height: 1.75rem;
     cursor: pointer;
