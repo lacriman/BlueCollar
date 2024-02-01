@@ -325,6 +325,7 @@ h6 {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
+  z-index: 5;
 }
 
 .header._header-scroll {
@@ -810,7 +811,6 @@ h6 {
 }
 
 .hero {
-  z-index: -5;
   position: relative;
   min-height: 100vh;
   display: -webkit-box;
@@ -888,6 +888,10 @@ h6 {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+}
+
+.hero__button {
+  z-index: 55;
 }
 
 .about-us__container {
@@ -3200,117 +3204,117 @@ h6 {
   color: #1C2752;
 }
 
-@supports (font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem )) {
+@supports (font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem )) {
   .form__body input::-webkit-input-placeholder, .form__body textarea::-webkit-input-placeholder {
-    font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem );
+    font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem );
   }
   .form__body input::-moz-placeholder, .form__body textarea::-moz-placeholder {
-    font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem );
+    font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem );
   }
   .form__body input:-ms-input-placeholder, .form__body textarea:-ms-input-placeholder {
-    font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem );
+    font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem );
   }
   .form__body input::-ms-input-placeholder, .form__body textarea::-ms-input-placeholder {
-    font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem );
+    font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem );
   }
   .form__body input::placeholder,
   .form__body textarea::placeholder {
-    font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem );
+    font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem );
   }
 }
 
-@supports not (font-size: clamp( 1.0625rem , 1.3159340659rem  +  -0.3296703297vw , 1.25rem )) {
+@supports not (font-size: clamp( 1rem , 0.978021978rem  +  0.1098901099vw , 1.0625rem )) {
   .form__body input::-webkit-input-placeholder, .form__body textarea::-webkit-input-placeholder {
-    font-size: calc(1.25rem + -0.1875 * (100vw - 20rem) / 56.875);
+    font-size: calc(1rem + 0.0625 * (100vw - 20rem) / 56.875);
   }
   .form__body input::-moz-placeholder, .form__body textarea::-moz-placeholder {
-    font-size: calc(1.25rem + -0.1875 * (100vw - 20rem) / 56.875);
+    font-size: calc(1rem + 0.0625 * (100vw - 20rem) / 56.875);
   }
   .form__body input:-ms-input-placeholder, .form__body textarea:-ms-input-placeholder {
-    font-size: calc(1.25rem + -0.1875 * (100vw - 20rem) / 56.875);
+    font-size: calc(1rem + 0.0625 * (100vw - 20rem) / 56.875);
   }
   .form__body input::-ms-input-placeholder, .form__body textarea::-ms-input-placeholder {
-    font-size: calc(1.25rem + -0.1875 * (100vw - 20rem) / 56.875);
+    font-size: calc(1rem + 0.0625 * (100vw - 20rem) / 56.875);
   }
   .form__body input::placeholder,
   .form__body textarea::placeholder {
-    font-size: calc(1.25rem + -0.1875 * (100vw - 20rem) / 56.875);
+    font-size: calc(1rem + 0.0625 * (100vw - 20rem) / 56.875);
   }
 }
 
-@supports (line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem )) {
+@supports (line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem )) {
   .form__body input::-webkit-input-placeholder, .form__body textarea::-webkit-input-placeholder {
-    line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem );
+    line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem );
   }
   .form__body input::-moz-placeholder, .form__body textarea::-moz-placeholder {
-    line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem );
+    line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem );
   }
   .form__body input:-ms-input-placeholder, .form__body textarea:-ms-input-placeholder {
-    line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem );
+    line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem );
   }
   .form__body input::-ms-input-placeholder, .form__body textarea::-ms-input-placeholder {
-    line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem );
+    line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem );
   }
   .form__body input::placeholder,
   .form__body textarea::placeholder {
-    line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem );
+    line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem );
   }
 }
 
-@supports not (line-height: clamp( 1.6875rem , 1.9409340659rem  +  -0.3296703297vw , 1.875rem )) {
+@supports not (line-height: clamp( 1.6875rem , 1.856456044rem  +  -0.2197802198vw , 1.8125rem )) {
   .form__body input::-webkit-input-placeholder, .form__body textarea::-webkit-input-placeholder {
-    line-height: calc(1.875rem + -0.1875 * (100vw - 20rem) / 56.875);
+    line-height: calc(1.8125rem + -0.125 * (100vw - 20rem) / 56.875);
   }
   .form__body input::-moz-placeholder, .form__body textarea::-moz-placeholder {
-    line-height: calc(1.875rem + -0.1875 * (100vw - 20rem) / 56.875);
+    line-height: calc(1.8125rem + -0.125 * (100vw - 20rem) / 56.875);
   }
   .form__body input:-ms-input-placeholder, .form__body textarea:-ms-input-placeholder {
-    line-height: calc(1.875rem + -0.1875 * (100vw - 20rem) / 56.875);
+    line-height: calc(1.8125rem + -0.125 * (100vw - 20rem) / 56.875);
   }
   .form__body input::-ms-input-placeholder, .form__body textarea::-ms-input-placeholder {
-    line-height: calc(1.875rem + -0.1875 * (100vw - 20rem) / 56.875);
+    line-height: calc(1.8125rem + -0.125 * (100vw - 20rem) / 56.875);
   }
   .form__body input::placeholder,
   .form__body textarea::placeholder {
-    line-height: calc(1.875rem + -0.1875 * (100vw - 20rem) / 56.875);
+    line-height: calc(1.8125rem + -0.125 * (100vw - 20rem) / 56.875);
   }
 }
 
-@supports (letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem )) {
+@supports (letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem )) {
   .form__body input::-webkit-input-placeholder, .form__body textarea::-webkit-input-placeholder {
-    letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem );
+    letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem );
   }
   .form__body input::-moz-placeholder, .form__body textarea::-moz-placeholder {
-    letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem );
+    letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem );
   }
   .form__body input:-ms-input-placeholder, .form__body textarea:-ms-input-placeholder {
-    letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem );
+    letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem );
   }
   .form__body input::-ms-input-placeholder, .form__body textarea::-ms-input-placeholder {
-    letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem );
+    letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem );
   }
   .form__body input::placeholder,
   .form__body textarea::placeholder {
-    letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem );
+    letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem );
   }
 }
 
-@supports not (letter-spacing: clamp( 0.0225rem , 0.030103022rem  +  -0.0098901099vw , 0.028125rem )) {
+@supports not (letter-spacing: clamp( 0.0225rem , 0.0258791209rem  +  -0.0043956044vw , 0.025rem )) {
   .form__body input::-webkit-input-placeholder, .form__body textarea::-webkit-input-placeholder {
-    letter-spacing: calc(0.028125rem + -0.005625 * (100vw - 20rem) / 56.875);
+    letter-spacing: calc(0.025rem + -0.0025 * (100vw - 20rem) / 56.875);
   }
   .form__body input::-moz-placeholder, .form__body textarea::-moz-placeholder {
-    letter-spacing: calc(0.028125rem + -0.005625 * (100vw - 20rem) / 56.875);
+    letter-spacing: calc(0.025rem + -0.0025 * (100vw - 20rem) / 56.875);
   }
   .form__body input:-ms-input-placeholder, .form__body textarea:-ms-input-placeholder {
-    letter-spacing: calc(0.028125rem + -0.005625 * (100vw - 20rem) / 56.875);
+    letter-spacing: calc(0.025rem + -0.0025 * (100vw - 20rem) / 56.875);
   }
   .form__body input::-ms-input-placeholder, .form__body textarea::-ms-input-placeholder {
-    letter-spacing: calc(0.028125rem + -0.005625 * (100vw - 20rem) / 56.875);
+    letter-spacing: calc(0.025rem + -0.0025 * (100vw - 20rem) / 56.875);
   }
   .form__body input::placeholder,
   .form__body textarea::placeholder {
-    letter-spacing: calc(0.028125rem + -0.005625 * (100vw - 20rem) / 56.875);
+    letter-spacing: calc(0.025rem + -0.0025 * (100vw - 20rem) / 56.875);
   }
 }
 
@@ -5116,6 +5120,7 @@ h6 {
 
   .hero img {
     display: none;
+    z-index: -2;
   }
 }
 
