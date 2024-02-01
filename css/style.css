@@ -410,19 +410,31 @@ h6 {
   color: white;
 }
 
+@supports (font-size: clamp( 0.875rem , 0.7431318681rem  +  0.6593406593vw , 1.25rem )) {
+  .menu__link {
+    font-size: clamp( 0.875rem , 0.7431318681rem  +  0.6593406593vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.7431318681rem  +  0.6593406593vw , 1.25rem )) {
+  .menu__link {
+    font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 56.875);
+  }
+}
+
 .menu__button {
   margin-left: auto;
 }
 
-@supports (font-size: clamp( 1rem , 0.956043956rem  +  0.2197802198vw , 1.125rem )) {
+@supports (font-size: clamp( 0.875rem , 0.7870879121rem  +  0.4395604396vw , 1.125rem )) {
   .menu__button {
-    font-size: clamp( 1rem , 0.956043956rem  +  0.2197802198vw , 1.125rem );
+    font-size: clamp( 0.875rem , 0.7870879121rem  +  0.4395604396vw , 1.125rem );
   }
 }
 
-@supports not (font-size: clamp( 1rem , 0.956043956rem  +  0.2197802198vw , 1.125rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.7870879121rem  +  0.4395604396vw , 1.125rem )) {
   .menu__button {
-    font-size: calc(1rem + 0.125 * (100vw - 20rem) / 56.875);
+    font-size: calc(0.875rem + 0.25 * (100vw - 20rem) / 56.875);
   }
 }
 
@@ -4296,6 +4308,10 @@ h6 {
   color: #FFB342;
 }
 
+.form__error {
+  border: 1px solid rgb(202, 0, 0);
+}
+
 .subscribe {
   padding: 8.75rem 0.2rem;
   background-color: #FFB342;
@@ -5453,8 +5469,8 @@ h6 {
   }
 
   .menu__link {
+    font-size: 1.5rem;
     color: #1C2752;
-    font-size: 1.875rem;
   }
 
   .menu__button {
